@@ -4,11 +4,11 @@
 
 ---
 
-Krakow, Poland • dasha.ermolich@gmail.com • +48 571 081 498 • [LinkedIn](https://www.linkedin.com/in/dasha-ermolich-b4b646192/) • [GitHub](https://github.com/DashaErmolich/)
+Węgrzce Wielkie, Poland • dasha.ermolich@gmail.com • +48 571 081 498 • [LinkedIn](https://www.linkedin.com/in/dasha-ermolich-b4b646192/) • [GitHub](https://github.com/DashaErmolich/)
 
 ---
 
-Junior front-end developer ready for the full-time distant or not (in Krakow) work. I have no commercial experience in IT sphere, but I have finished JavaScript/Front-end courses of the Rolling Scopes School and I want to continue learning and practice developing of web applications. During the learning path I have implemented several responsive web applications with vanilla JS, HTML, CSS, and now I can do this as SPA with Angular framework as well. I also have an experience in using libraries such as Bootstrap, RxJs, NgRx, etc. In addition I am not afraid of taking the responsibility so for the last school team projects I had the team lead role where one of the most important task was to setup the project from scratch using Webpack and CI/CD pipelines.
+Junior front-end developer ready for the full-time distant or not (in Węgrzce Wielkie) work. I have no commercial experience in IT sphere, but I have finished JavaScript/Front-end courses of the Rolling Scopes School and I want to continue learning and practice developing of web applications. During the learning path I have implemented several responsive web applications with vanilla JS, HTML, CSS, and now I can do this as SPA with Angular framework as well. I also have an experience in using libraries such as Bootstrap, RxJs, NgRx, etc. In addition I am not afraid of taking the responsibility so for the last school team projects I had the team lead role where one of the most important task was to setup the project from scratch using Webpack and CI/CD pipelines.
 
 ---
 
