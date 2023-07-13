@@ -15,17 +15,17 @@ Well-organized, highly motivated junior front-end developer with excellent abili
 ### Work Experience
 
 * 2020 – 2022 • **Chemist** • [RUE Center for examinations and tests in health service](https://rceth.by/en)
-  * Examination of the relevant sections of the documents for compliance with the medicinal product
-  * Verification of the accuracy of reproducing quality control procedures of medicinal products
-  * Maintaining laboratory documentation
+  * Examined the relevant sections of the documents for compliance with the medicinal product
+  * Verified the accuracy of reproducing quality control procedures of medicinal products
+  * Maintained a laboratory documentation
 * 2019 – 2020 • **Sales Manager** • [ALC Bel-Ayavr](https://www.linkedin.com/company/bvrby/about/)
-  * Sale of chromatographic laboratory equipment produced by Thermo Fisher Scientific such as HPLC, GC, IC, MS, etc.
-  * Preparation of educational seminars with Thermo Fisher Scientific representatives
+  * Sold chromatographic laboratory equipment produced by Thermo Fisher Scientific such as HPLC, GC, IC, MS, etc.
+  * Prepared educational seminars with Thermo Fisher Scientific representatives
 * 2017 – 2019 • **Chemist** • [Belmedpreparaty](https://www.belmedpreparaty.com/eng/)
-  * Quality control of medicinal products in the HPLC laboratory department
-  * Validation of quality control methods
-  * Maintaining laboratory documentation
-  * Communication with delegations during periodic audits
+  * Carried out quality control of medicinal products in HPLC laboratory department
+  * Validated quality control methods
+  * Maintained laboratory documentation
+  * Communicated with delegations during periodic audits
 
 ---
 
