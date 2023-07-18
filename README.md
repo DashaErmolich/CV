@@ -53,6 +53,19 @@ Well-organized, highly motivated junior front-end developer with excellent abili
 
 ---
 
+### Projects
+
+* [RS Music App](https://dashaermolich-rs-clone.netlify.app)
+* [Airways](https://dashaermolich-airways.netlify.app)
+* [Online Store](https://dashaermolich-online-store.netlify.app)
+* [SongBird](https://rolling-scopes-school.github.io/dashaermolich-JSFE2022Q3/songbird/pages/start.html)
+* [Gem Puzzle](https://rolling-scopes-school.github.io/dashaermolich-JSFE2022Q3/codejam-the-gem-puzzle)
+* [Online Zoo](https://rolling-scopes-school.github.io/dashaermolich-JSFE2022Q3/online-zoo/pages/main)
+* [Eldritch Horror (game helper)](https://rolling-scopes-school.github.io/dashaermolich-JSFEPRESCHOOL2022Q2/codejam-eldritch)
+* [Momentum](https://rolling-scopes-school.github.io/dashaermolich-JSFEPRESCHOOL2022Q2/momentum)
+
+---
+
 ### Languages
 
 * Russian (native)
