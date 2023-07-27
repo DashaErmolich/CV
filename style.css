@@ -188,3 +188,12 @@ ul li {
     width: 100%;
   }
 }
+
+.project-link {
+  opacity: 0.3;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
