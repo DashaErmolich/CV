@@ -1,0 +1,42 @@
+<h1>{{ my.name }} {{ my.surname }}</h1>
+
+<p>{{ my.about }}</p>
+
+<h2>Contacts</h2>
+
+<ul>
+  <li>{{ my.location }}</li>
+  <li>{{ my.contacts.email }}</li>
+  <li>{{ my.contacts.tel }}</li>
+  <li>{{ my.contacts.LinkedInLink }}</li>
+  <li>{{ my.contacts.GitHubLink }}</li>
+</ul>
+
+<h2>Languages</h2>
+
+<ul>
+  <li *ngFor="let item of my.languages">
+    <ul>
+      <li>{{ item.title }}</li>
+      <li>{{ item.level }}</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Education</h2>
+
+<ul>
+  <li *ngFor="let item of my.education">
+    <ul>
+      <li>{{ item.start }} - {{ item.end }}</li>
+      <li>{{ item.title }}</li>
+      <li>{{ item.companyName }}</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Skills</h2>
+
+<ul>
+  <li *ngFor="let item of my.skills">{{ item }}</li>
+</ul>

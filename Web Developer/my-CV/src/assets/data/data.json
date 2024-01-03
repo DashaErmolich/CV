@@ -1,0 +1,126 @@
+{
+  "name": "Dasha",
+  "surname": "Ermolich",
+  "location": "Węgrzce Wielkie, Lesser Poland Voivodeship, Poland",
+  "contacts": {
+    "email": "dasha.ermolich@gmail.com",
+    "tel": "+48 571 081 498",
+    "LinkedInLink": "https://www.linkedin.com/in/dasha-ermolich-b4b646192/",
+    "GitHubLink": "https://github.com/DashaErmolich/"
+  },
+  "about": "Well-organized, highly motivated junior front-end developer with excellent ability to fast learning and team working. Recently successfully finished JavaScript/Front-end and Angular courses at the Rolling Scopes School and extremely interested in continuing learning and improving my technical skills. Have extensive experience in implementing responsive web applications with vanilla JS, HTML, and CSS during the learning path, and now can do this as SPA with Angular framework as well, especially applying Angular Materials, Angular routing, reactive forms, animations, etc. Also have a useful practice of using different libraries such as RxJs, NgRx, Bootstrap, etc. Self-motivated, resourceful, and without fear of taking responsibility team member. Used to be a team lead during school group tasks with a responsibility to set up the project with CI/CD pipelines from scratch and held meetups.",
+  "workExperience": [
+    {
+      "start": "2020",
+      "end": "2022",
+      "title": "Chemist",
+      "companyName": "RUE Center for examinations and tests in health service",
+      "companyLink": "https://rceth.by/en",
+      "details": [
+        "Examined the relevant sections of the documents for compliance with the medicinal product",
+        "Verified the accuracy of reproducing quality control procedures of medicinal products",
+        "Maintained a laboratory documentation"
+      ]
+    },
+    {
+      "start": "2019",
+      "end": "2020",
+      "title": "Sales Manager",
+      "companyName": "ALC Bel-Ayavr",
+      "companyLink": "https://www.linkedin.com/company/bvrby/about/",
+      "details": [
+        "Sold chromatographic laboratory equipment produced by Thermo Fisher Scientific such as HPLC, GC, IC, MS, etc.",
+        "Prepared educational seminars with Thermo Fisher Scientific representatives"
+      ]
+    },
+    {
+      "start": "2017",
+      "end": "2019",
+      "title": "Chemist",
+      "companyName": "Belmedpreparaty",
+      "companyLink": "https://www.belmedpreparaty.com/eng/",
+      "details": [
+        "Carried out quality control of medicinal products in HPLC laboratory department",
+        "Validated quality control methods",
+        "Maintained a laboratory documentation",
+        "Communicated with delegations during periodic audits"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "start": "2023",
+      "end": "2023",
+      "title": "The Complete RxJS Course",
+      "companyName": "Udemy",
+      "companyLink": "https://www.udemy.com/",
+      "certificateLink": "https://www.udemy.com/certificate/UC-5546ff37-e077-4d4f-82a7-7d8997740a55/"
+    },
+    {
+      "start": "2023",
+      "end": "2023",
+      "title": "Angular Course",
+      "companyName": "The Rolling Scopes School",
+      "companyLink": "https://rs.school/",
+      "certificateLink": "https://app.rs.school/certificate/qmbejauj"
+    },
+    {
+      "start": "2022",
+      "end": "2023",
+      "title": "JavaScript/Front-end",
+      "companyName": "The Rolling Scopes School",
+      "companyLink": "https://rs.school/",
+      "certificateLink": "https://app.rs.school/certificate/y8iodine"
+    },
+    {
+      "start": "2022",
+      "end": "2022",
+      "title": "JavaScript/Front-end. Stage 0",
+      "companyName": "The Rolling Scopes School",
+      "companyLink": "https://rs.school/",
+      "certificateLink": "https://app.rs.school/certificate/kalb18to"
+    },
+    {
+      "start": "2012",
+      "end": "2017",
+      "title": "Chemist. Chemist-Pharmacist (Specialist Degree)",
+      "companyName": "The Belarusian State University",
+      "companyLink": "https://bsu.by/en/structure/faculties/khimicheskiy-fakultet-d",
+      "certificateLink": null
+    }
+  ],
+  "skills": [
+    "Angular",
+    "Angular Materials",
+    "RxJS",
+    "NgRx",
+    "JavaScript",
+    "Typescript",
+    "HTML",
+    "CSS",
+    "Sass",
+    "Git",
+    "GitHub",
+    "CI/CD",
+    "GitHub Actions",
+    "Webpack",
+    "Rest API",
+    "Webpack",
+    "Figma"
+  ],
+  "languages": [
+    {
+      "title": "Russian",
+      "level": "native"
+    },
+    {
+      "title": "English",
+      "level": "B2"
+    },
+    {
+      "title": "Polish",
+      "level": "B1"
+    }
+  ],
+  "projects": []
+}
