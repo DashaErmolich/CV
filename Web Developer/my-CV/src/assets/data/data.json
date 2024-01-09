@@ -1,21 +1,29 @@
 {
   "name": "Dasha",
   "surname": "Ermolich",
-  "location": "Węgrzce Wielkie, Lesser Poland Voivodeship, Poland",
+  "location": {
+    "title": "Krakow Metropolitan Area, Poland",
+    "link": "https://www.google.com/maps/place/32-002+W%C4%99grzce+Wielkie/@50.0186833,20.0987608,14z/data=!3m1!4b1!4m6!3m5!1s0x471646b82577b7af:0x2578abd7d92da004!8m2!3d50.0185041!4d20.1129401!16s%2Fm%2F04jnjrs?entry=ttu"
+  },
   "contacts": {
     "email": "dasha.ermolich@gmail.com",
     "tel": "+48 571 081 498",
-    "LinkedInLink": "https://www.linkedin.com/in/dasha-ermolich-b4b646192/",
-    "GitHubLink": "https://github.com/DashaErmolich/"
+    "linkedInLink": "https://www.linkedin.com/in/dasha-ermolich-b4b646192/",
+    "gitHubLink": "https://github.com/DashaErmolich/",
+    "portfolioLink": ""
   },
-  "about": "Well-organized, highly motivated junior front-end developer with excellent ability to fast learning and team working. Recently successfully finished JavaScript/Front-end and Angular courses at the Rolling Scopes School and extremely interested in continuing learning and improving my technical skills. Have extensive experience in implementing responsive web applications with vanilla JS, HTML, and CSS during the learning path, and now can do this as SPA with Angular framework as well, especially applying Angular Materials, Angular routing, reactive forms, animations, etc. Also have a useful practice of using different libraries such as RxJs, NgRx, Bootstrap, etc. Self-motivated, resourceful, and without fear of taking responsibility team member. Used to be a team lead during school group tasks with a responsibility to set up the project with CI/CD pipelines from scratch and held meetups.",
-  "workExperience": [
+  "subtitle": "Web Developer",
+  "about": "Well-organized, highly motivated junior front-end developer with excellent ability to fast learning and team working. Recently successfully finished JavaScript/Front-end and Angular courses at the Rolling Scopes School and extremely interested in continuing learning and improving my technical skills. Have extensive experience in implementing responsive web applications with vanilla JS, HTML, and CSS during the learning path, and now can do this as SPA with Angular framework as well, especially applying Angular Material, Angular routing, reactive forms, animations, etc. Also have a useful practice of using different libraries such as RxJs, NgRx, Bootstrap, etc. Self-motivated, resourceful, and without fear of taking responsibility team member. Used to be a team lead during school group tasks with a responsibility to set up the project with CI/CD pipelines from scratch and held meetups.",
+  "workExperience": {
+    "title": "Experience",
+    "items": [
     {
       "start": "2020",
       "end": "2022",
       "title": "Chemist",
       "companyName": "RUE Center for examinations and tests in health service",
       "companyLink": "https://rceth.by/en",
+      "companyLogo": "",
       "details": [
         "Examined the relevant sections of the documents for compliance with the medicinal product",
         "Verified the accuracy of reproducing quality control procedures of medicinal products",
@@ -28,6 +36,7 @@
       "title": "Sales Manager",
       "companyName": "ALC Bel-Ayavr",
       "companyLink": "https://www.linkedin.com/company/bvrby/about/",
+      "companyLogo": "",
       "details": [
         "Sold chromatographic laboratory equipment produced by Thermo Fisher Scientific such as HPLC, GC, IC, MS, etc.",
         "Prepared educational seminars with Thermo Fisher Scientific representatives"
@@ -39,6 +48,7 @@
       "title": "Chemist",
       "companyName": "Belmedpreparaty",
       "companyLink": "https://www.belmedpreparaty.com/eng/",
+      "companyLogo": "",
       "details": [
         "Carried out quality control of medicinal products in HPLC laboratory department",
         "Validated quality control methods",
@@ -46,81 +56,345 @@
         "Communicated with delegations during periodic audits"
       ]
     }
-  ],
-  "education": [
-    {
-      "start": "2023",
-      "end": "2023",
-      "title": "The Complete RxJS Course",
-      "companyName": "Udemy",
-      "companyLink": "https://www.udemy.com/",
-      "certificateLink": "https://www.udemy.com/certificate/UC-5546ff37-e077-4d4f-82a7-7d8997740a55/"
-    },
-    {
-      "start": "2023",
-      "end": "2023",
-      "title": "Angular Course",
-      "companyName": "The Rolling Scopes School",
-      "companyLink": "https://rs.school/",
-      "certificateLink": "https://app.rs.school/certificate/qmbejauj"
-    },
-    {
-      "start": "2022",
-      "end": "2023",
-      "title": "JavaScript/Front-end",
-      "companyName": "The Rolling Scopes School",
-      "companyLink": "https://rs.school/",
-      "certificateLink": "https://app.rs.school/certificate/y8iodine"
-    },
-    {
-      "start": "2022",
-      "end": "2022",
-      "title": "JavaScript/Front-end. Stage 0",
-      "companyName": "The Rolling Scopes School",
-      "companyLink": "https://rs.school/",
-      "certificateLink": "https://app.rs.school/certificate/kalb18to"
-    },
+  ]},
+  "courses": {
+    "title": "Courses",
+    "items": [
+      {
+        "start": "2023",
+        "end": "2023",
+        "title": "Getting Started with Web Development",
+        "companyName": "SAP",
+        "companyLink": "https://learning.sap.com/",
+        "companyLogo": "https://media.licdn.com/dms/image/D4E0BAQFgplzXUs8o1Q/company-logo_200_200/0/1688178772044/sap_logo?e=1712793600&v=beta&t=HHG6dgGv5Ca1v68EstEw-vqnVgl37gFlve03GdHSlEE",
+        "courseLink": "https://learning.sap.com/learning-journey/getting-started-with-ux",
+        "certificateLink": "https://www.credly.com/badges/bd7a2e8e-1561-4d07-8e06-279e5c82ccc9/public_url",
+        "skills": [
+          "CSS",
+          "HTML",
+          "JavaScript",
+          "User Interfaces",
+          "SAPUI5"
+        ]
+      },
+      {
+        "start": "2023",
+        "end": "2023",
+        "title": "Learning the Basics of SAP Fiori",
+        "companyName": "SAP",
+        "companyLink": "https://learning.sap.com/",
+        "companyLogo": "https://media.licdn.com/dms/image/D4E0BAQFgplzXUs8o1Q/company-logo_200_200/0/1688178772044/sap_logo?e=1712793600&v=beta&t=HHG6dgGv5Ca1v68EstEw-vqnVgl37gFlve03GdHSlEE",
+        "courseLink": "https://learning.sap.com/learning-journey/learn-the-basics-of-sap-fiori",
+        "certificateLink": "https://www.credly.com/badges/04e78d26-3eb1-4ae4-97f4-fb8df80281ac/public_url",
+        "skills": [
+          "SAP Fiori App Development",
+          "SAP Fiori",
+          "SAP UI5",
+          "User Experience Consistency",
+          "User Interface Design"
+        ]
+      },
+      {
+        "start": "2023",
+        "end": "2023",
+        "title": "Discovering SAP Business Technology Platform",
+        "companyName": "SAP",
+        "companyLink": "https://learning.sap.com/",
+        "companyLogo": "https://media.licdn.com/dms/image/D4E0BAQFgplzXUs8o1Q/company-logo_200_200/0/1688178772044/sap_logo?e=1712793600&v=beta&t=HHG6dgGv5Ca1v68EstEw-vqnVgl37gFlve03GdHSlEE",
+        "courseLink": "https://learning.sap.com/learning-journey/discover-sap-business-technology-platform",
+        "certificateLink": "https://www.credly.com/badges/87e29d20-1a51-4180-bda8-642521561fec/public_url",
+        "skills": [
+          "SAP BTP",
+          "SAP CAP",
+          "SAP Build"
+        ]
+      },
+      {
+        "start": "2023",
+        "end": "2023",
+        "title": "The Complete RxJS Course",
+        "companyName": "Udemy",
+        "companyLink": "https://www.udemy.com/",
+        "companyLogo": "https://media.licdn.com/dms/image/C4D0BAQFQr9e68bBOPQ/company-logo_200_200/0/1630536914848/udemy_logo?e=1712793600&v=beta&t=TMYSFq_YG_I4j46G1MU9OflAD6BQG7OVYM1FeAMarz8",
+        "certificateLink": "https://www.udemy.com/certificate/UC-5546ff37-e077-4d4f-82a7-7d8997740a55/",
+        "skills": [
+          "RxJS"
+        ]
+      },
+      {
+        "start": "2023",
+        "end": "2023",
+        "title": "Angular Course",
+        "companyName": "The Rolling Scopes School",
+        "companyLink": "https://rs.school/",
+        "companyLogo": "https://media.licdn.com/dms/image/D4D0BAQHrAfAcwkHG5Q/company-logo_200_200/0/1685703475619/the_rolling_scopes_school_logo?e=1712793600&v=beta&t=FvTUsJScOIwzRHszx0YfdQJVdEKjAMGrQj36INQTl-Q",
+        "certificateLink": "https://app.rs.school/certificate/qmbejauj",
+        "skills": [
+          "Angular",
+          "Angular Material",
+          "Angular Reactive Forms",
+          "Angular Animations",
+          "RxJS",
+          "NgRx"
+        ]
+      },
+      {
+        "start": "2022",
+        "end": "2023",
+        "title": "JavaScript/Front-end",
+        "companyName": "The Rolling Scopes School",
+        "companyLink": "https://rs.school/",
+        "companyLogo": "https://media.licdn.com/dms/image/D4D0BAQHrAfAcwkHG5Q/company-logo_200_200/0/1685703475619/the_rolling_scopes_school_logo?e=1712793600&v=beta&t=FvTUsJScOIwzRHszx0YfdQJVdEKjAMGrQj36INQTl-Q",
+        "certificateLink": "https://app.rs.school/certificate/y8iodine",
+        "skills": [
+          "JavaScript",
+          "Typescript",
+          "HTML",
+          "CSS",
+          "Git",
+          "Sass",
+          "REST API",
+          "CI/CD",
+          "Node.js",
+          "Bootstrap",
+          "DOM",
+          "Fetch API",
+          "History API",
+          "URL API",
+          "Canvas",
+          "Web Animations API",
+          "Web Audio API"
+        ]
+      },
+      {
+        "start": "2022",
+        "end": "2022",
+        "title": "JavaScript/Front-end. Stage 0",
+        "companyName": "The Rolling Scopes School",
+        "companyLink": "https://rs.school/",
+        "companyLogo": "https://media.licdn.com/dms/image/D4D0BAQHrAfAcwkHG5Q/company-logo_200_200/0/1685703475619/the_rolling_scopes_school_logo?e=1712793600&v=beta&t=FvTUsJScOIwzRHszx0YfdQJVdEKjAMGrQj36INQTl-Q",
+        "certificateLink": "https://app.rs.school/certificate/kalb18to",
+        "skills": [
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items":[
     {
       "start": "2012",
       "end": "2017",
-      "title": "Chemist. Chemist-Pharmacist (Specialist Degree)",
+      "title": "Chemist. Chemist-Pharmacist",
       "companyName": "The Belarusian State University",
       "companyLink": "https://bsu.by/en/structure/faculties/khimicheskiy-fakultet-d",
-      "certificateLink": null
+      "companyLogo": "https://media.licdn.com/dms/image/D4E0BAQH7DTCk5iDqFw/company-logo_200_200/0/1666876000616/belarusian_state_university_logo?e=1712793600&v=beta&t=hGhmOOnyb6YUI2N4IYARhGF3T6ktCEjxbTGqJyq7iCo",
+      "certificateLink": null,
+      "skills": null
     }
-  ],
-  "skills": [
-    "Angular",
-    "Angular Materials",
-    "RxJS",
-    "NgRx",
-    "JavaScript",
-    "Typescript",
-    "HTML",
-    "CSS",
-    "Sass",
-    "Git",
-    "GitHub",
-    "CI/CD",
-    "GitHub Actions",
-    "Webpack",
-    "Rest API",
-    "Webpack",
-    "Figma"
-  ],
-  "languages": [
-    {
-      "title": "Russian",
-      "level": "native"
-    },
+  ]},
+  "skills": {
+    "title": "Skills",
+    "items": [
+      {
+        "title": "Front End Development",
+        "items": [
+          "JavaScript",
+          "Typescript",
+          "Angular",
+          "Angular Material",
+          "SAP Fiori",
+          "SAPUI5",
+          "SAP Build",
+          "RxJS",
+          "NgRx",
+          "HTML",
+          "CSS",
+          "Sass",
+          "Bootstrap"
+        ]
+      },
+      {
+        "title": "Back End Development",
+        "items": [
+          "SAP CAP",
+          "SAP Cloud SDK",
+          "OData",
+          "Node.js",
+          "Express.js",
+          "SQL"
+        ]
+      },
+      {
+        "title": "Miscellaneous",
+        "items": [
+          "SAP BTP",
+          "SAP HANA Cloud",
+          "CI/CD",
+          "Git",
+          "Webpack",
+          "Postman",
+          "Rest API",
+          "Figma"
+        ]
+      }
+  ]},
+  "languages":{
+    "title": "Languages",
+    "items": [
     {
       "title": "English",
-      "level": "B2"
+      "level": "B2",
+      "emoji": "🇬🇧"
     },
     {
       "title": "Polish",
-      "level": "B1"
+      "level": "B1",
+      "emoji": "🇵🇱"
+    },
+    {
+      "title": "Russian",
+      "level": "Native",
+      "emoji": "🇷🇺"
     }
-  ],
-  "projects": []
+  ]},
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "LabSupplies",
+        "start": "September 2023",
+        "end": "October 2023",
+        "details": [
+          "Worked with SAP BTP in Cloud Foundry environment with SAP HANA Cloud",
+          "Used SAP BTP services (Cloud Identity Services, SAP Build Work Zone, SAP Build Apps, SAP Business Application Studio)",
+          "Defined data model and provided services with SAP CAP (Node.js), implemented custom logic with event handlers",
+          "Used SAP Cloud SDK and Adobe PDF Services (report creating)",
+          "Created SAP Fiori application (List Report, Object Page) with with SAP Flexible Programming Model implementation",
+          "Deployed frontend SAP Fiori Application and backend CAP Project to the SAP BTP Subaccount",
+          "Setup destinations for receiving notification via email and Build Work Zone",
+          "Created mobile application with SAP Build Apps (QR Code scanner) with interaction with main application"
+        ],
+        "deployLink": "https://a39e098ctrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=18693773-ca8e-4995-bcb8-025e19224ea5#laborder-manage?sap-ui-app-id-hint=saas_approuter_orders",
+        "gitHubLink": "https://github.com/DashaErmolich/LabSupplies",
+        "skills": [
+          "SAP CAP",
+          "SAP Fiori",
+          "SAP BTP",
+          "Cloud Foundry",
+          "SAP Build"
+        ]
+      },
+      {
+        "title": "Airways",
+        "start": "April 2023",
+        "end": "May 2023",
+        "details": [
+          "Flight tickets shop clone",
+          "Responsive layout",
+          "Node.js backend service",
+          "User authentication",
+          "Forms with custom validator inputs and autocomplete",
+          "Build-in and custom Angular pipes and directives",
+          "Lazy loaded modules",
+          "Angular Material components"
+        ],
+        "deployLink": "https://dashaermolich-airways.netlify.app",
+        "gitHubLink": "https://github.com/DashaErmolich/airways",
+        "skills": [
+          "Angular",
+          "Angular Material",
+          "RxJS",
+          "NgRx",
+          "CI/CD"
+        ]
+      },
+      {
+        "title": "RS Music App",
+        "start": "January 2023",
+        "end": "March 2023",
+        "details": [
+          "Spotify clone with Deezer API music catalogue",
+          "Responsive layout",
+          "Authentication with e-mail confirmation",
+          "Listen track examples (only 30 s) with search in different categories",
+          "Add favorite tracks, playlists, artists, albums, radios to your library",
+          "Create your own playlists",
+          "Customize app appearance with themes",
+          "Use app in your preference language",
+          "Setup player with equalizer presets or custom settings",
+          "Enjoy with frequency bar graph of playing track, etc.",
+          "Deployed frontend Angular Application and backend CAP Project to the SAP BTP Subaccount"
+        ],
+        "deployLink": "https://dashaermolich-rs-clone.netlify.app",
+        "gitHubLink": "https://github.com/DashaErmolich/rs-clone",
+        "skills": [
+          "Angular",
+          "RxJS",
+          "REST API",
+          "CI/CD",
+          "Canvas"
+        ]
+      },
+      {
+        "title": "Online Shop",
+        "start": "December 2022",
+        "end": "January 2023",
+        "details": [
+          "Online store clone",
+          "Responsive layout",
+          "Products sorting and filtration",
+          "Routing with query params",
+          "Forms with input validation"
+        ],
+        "deployLink": "https://dashaermolich-online-store.netlify.app/",
+        "gitHubLink": "https://github.com/DashaErmolich/online-store/tree/develop",
+        "skills": [
+          "Typescript",
+          "Bootstrap",
+          "Webpack",
+          "CI/CD",
+          "Jest"
+        ]
+      },
+      {
+        "title": "Song Bird Quiz",
+        "start": "September 2022",
+        "end": "November 2022",
+        "details": [
+          "Six questions per round",
+          "Responsive layout",
+          "Custom audio player",
+          "App language changing"
+        ],
+        "deployLink": "https://rolling-scopes-school.github.io/dashaermolich-JSFE2022Q3/songbird/pages/start.html",
+        "gitHubLink": "https://github.com/rolling-scopes-school/dashaermolich-JSFE2022Q3/tree/songbird",
+        "skills": [
+          "Vanilla JS",
+          "Sass",
+          "Web Audio API"
+        ]
+      },
+      {
+        "title": "Gem Puzzle",
+        "start": "October 2022",
+        "end": "October 2022",
+        "details": [
+          "Six complexity levels",
+          "Responsive layout",
+          "Canvas with click and swipe tile movement"
+        ],
+        "deployLink": "https://rolling-scopes-school.github.io/dashaermolich-JSFE2022Q3/codejam-the-gem-puzzle/",
+        "gitHubLink": "https://github.com/rolling-scopes-school/dashaermolich-JSFE2022Q3/tree/codejam-the-gem-puzzle",
+        "skills": [
+          "Vanilla JS",
+          "CSS",
+          "Canvas"
+        ]
+      }
+    ]
+  }
 }

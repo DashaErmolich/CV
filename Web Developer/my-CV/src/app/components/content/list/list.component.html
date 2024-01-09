@@ -1,0 +1,61 @@
+<div class="mb-4">
+
+  <h2 class="list-title uppercase my-badge rounded-pill">{{ title }}</h2>
+
+  <ul *ngIf="skills">
+    <li *ngFor="let skill of skills">
+      <p class="uppercase bold">{{ skill.title }}:</p>
+      <ul class="list-inline">
+        <li *ngFor="let item of skill.items" class="list-inline-item list-item my-badge rounded-pill">{{ item }}</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul *ngIf="projects">
+    <li *ngFor="let project of projects">
+      <span class="uppercase bold">{{ project.title }}</span>
+      <p class="list-item-title">{{ project.start }} - {{ project.end }}</p>
+      <ul class="list-inline">
+        <li *ngFor="let item of project.skills" class="list-inline-item list-item my-badge rounded-pill">{{ item }}</li>
+      </ul>
+      <ul>
+        <li *ngFor="let item of project.details" class="mb-1">{{ item }}</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="list-group list-group-horizontal">
+    <li *ngFor="let item of languages" class="list-group-item">{{ item.emoji }} <strong>{{ item.title }}</strong> ({{ item.level }})</li>
+  </ul>
+
+  <mat-card *ngFor="let item of educationItems">
+    <mat-card-header>
+      <mat-card-title-group>
+        <img mat-card-avatar [src]="item.companyLogo" >
+        <mat-card-title>{{ item.title }}</mat-card-title>
+        <mat-card-subtitle>{{ item.companyName }}</mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      {{ item.start }} - {{ item.end }}
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card *ngFor="let course of courses" class="mb-2">
+    <mat-card-header>
+      <mat-card-title-group>
+        <img mat-card-avatar [src]="course.companyLogo" >
+        <mat-card-title>{{ course.title }}</mat-card-title>
+        <mat-card-subtitle>{{ course.companyName }}</mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      <ul class="list-inline">
+        <li *ngFor="let item of course.skills" class="list-inline-item list-item my-badge rounded-pill">
+          {{ item }}
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+</div>

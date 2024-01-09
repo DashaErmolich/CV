@@ -1,42 +1,58 @@
-<h1>{{ my.name }} {{ my.surname }}</h1>
+<div class="gradient z-n1 position-absolute"></div>
 
-<p>{{ my.about }}</p>
+<header class="container d-flex flex-column align-items-center mt-5 header">
+  <h1 class="my-title uppercase bold mb-3">
+    {{ my.name }} {{ my.surname }}
+  </h1>
+  <h3 class="my-subtitle my-badge rounded-pill mx-auto">{{ my.subtitle }}</h3>
+</header>
 
-<h2>Contacts</h2>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="list-group mb-3">
+      <a class="list-group-item list-group-item-action" [href]="my.location.link" target="_blank">
+        <i class="bi bi-geo-alt"></i>
+        {{ my.location.title }}
+      </a>
 
-<ul>
-  <li>{{ my.location }}</li>
-  <li>{{ my.contacts.email }}</li>
-  <li>{{ my.contacts.tel }}</li>
-  <li>{{ my.contacts.LinkedInLink }}</li>
-  <li>{{ my.contacts.GitHubLink }}</li>
-</ul>
+      <a class="list-group-item list-group-item-action" [href]="'mailto:' + my.contacts.email">
+        <i class="bi bi-envelope-at"></i>
+        {{ my.contacts.email }}
+      </a>
 
-<h2>Languages</h2>
+      <a class="list-group-item list-group-item-action" [href]="'tel:' + my.contacts.tel">
+        <i class="bi bi-phone"></i>
+        {{ my.contacts.tel }}
+      </a>
 
-<ul>
-  <li *ngFor="let item of my.languages">
-    <ul>
-      <li>{{ item.title }}</li>
-      <li>{{ item.level }}</li>
-    </ul>
-  </li>
-</ul>
+      <a class="list-group-item list-group-item-action" [href]="my.contacts.linkedInLink" target="_blank">
+        <i class="bi bi-linkedin"></i>
+        LinkedIn
+      </a>
 
-<h2>Education</h2>
+      <a class="list-group-item list-group-item-action" [href]="my.contacts.gitHubLink" target="_blank">
+        <i class="bi bi-github"></i>
+        GitHub
+      </a>
 
-<ul>
-  <li *ngFor="let item of my.education">
-    <ul>
-      <li>{{ item.start }} - {{ item.end }}</li>
-      <li>{{ item.title }}</li>
-      <li>{{ item.companyName }}</li>
-    </ul>
-  </li>
-</ul>
+      <a class="list-group-item list-group-item-action" [href]="my.contacts.portfolioLink" target="_blank">
+        <i class="bi bi-globe2"></i>
+        Portfolio
+      </a>
+    </div>
 
-<h2>Skills</h2>
+    <app-list [title]="my.skills.title" [skills]="my.skills.items"></app-list>
 
-<ul>
-  <li *ngFor="let item of my.skills">{{ item }}</li>
-</ul>
+    <app-list [title]="my.languages.title" [languages]="my.languages.items"></app-list>
+
+    <app-list [title]="my.education.title" [educationItems]="my.education.items"></app-list>
+
+    <app-list [title]="my.courses.title" [courses]="my.courses.items"></app-list>
+
+  </div>
+
+  <div class="col-lg-6">
+    <app-list [title]="my.projects.title" [projects]="my.projects.items"></app-list>
+  </div>
+</div>
+
