@@ -45,14 +45,29 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   margin-bottom: 5px;
 }
 
-.avatar {
-  vertical-align: middle;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-
 .uppercase {
   text-transform: uppercase;
+}
+
+.gradient {
+  --bs-badge-padding-y: 0.35em;
+  --mt-5: 3rem;
+  --mb-3: 1rem;
+  --h1-lh: 32px;
+  --h3-lh: 28px;
+  --h2-m: 16px;
+  --border-w: 1px;
+  background-image: linear-gradient( 135deg, #F0FF00 10%, #58CFFB 100%);
+  height: calc(var(--mt-5) + var(--h1-lh) + var(--mb-3) + var(--bs-badge-padding-y) + var(--border-w) + (var(--h3-lh) / 2));
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.flex-gap-3 {
+  gap: 0.5rem;
+}
+
+.pointer {
+  cursor: pointer;
 }

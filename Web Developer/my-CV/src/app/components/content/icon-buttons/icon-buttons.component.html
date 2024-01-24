@@ -1,0 +1,9 @@
+<div class="d-flex flex-row justify-content-start flex-wrap flex-gap-3">
+  <button *ngFor="let icon of icons"
+    mat-mini-fab
+    color="basic"
+    [matTooltip]="icon.tooltip"
+    (click)="onClick(icon)">
+    <mat-icon [svgIcon]="icon.name"></mat-icon>
+  </button>
+</div>

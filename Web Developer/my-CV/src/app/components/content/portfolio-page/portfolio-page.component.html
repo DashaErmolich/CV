@@ -1,0 +1,103 @@
+<div class="gradient section z-n1 position-absolute"></div>
+
+<app-header></app-header>
+
+<section class="section" [id]="sections.Home">
+  <div class="section-wrapper__centered">
+    <div class="d-flex justify-content-center align-items-center flex-lg-row flex-column column-gap-3">
+      <div class="flex-shrink-0">
+        <img src="../../../../assets/img/avatar/1.jpeg" alt="Avatar" class="avatar__colored-border">
+      </div>
+      <div class="flex-grow-1">
+        <article>
+          <h2>{{ my.subtitle }}</h2>
+          <h3>
+            Hi, I'm Dasha 👋
+          </h3>
+          <h3>
+            Enthusiastic Web Developer based on Krakow Metropolitan Area, Poland
+          </h3>
+        </article>
+
+
+        <article>
+          <div class="d-flex flex-row justify-content-start flex-wrap flex-gap-3">
+            <app-icon-buttons [icons]="icons | filter: 'group' : iconsGroup.Contacts"></app-icon-buttons>
+          </div>
+        </article>
+      </div>
+    </div>
+
+
+    <article>
+        <h3>My Tech stack</h3>
+        <div class="d-flex flex-row justify-content-start flex-wrap flex-gap-3">
+          <app-icon-buttons [icons]="icons | filter: 'group' : iconsGroup.TechStack"></app-icon-buttons>
+        </div>
+    </article>
+  </div>
+</section>
+
+<section class="section" [id]="sections.About">
+  <p>
+    I am a Web Developer with a penchant for self-learning and continuous professional growth.
+    I have a clear understanding of not only front-end but also back-end development using modern frameworks.
+    I also have experience collaborating on building applications from scratch using CI/CD pipelines.
+    My latest passion was exploring the SAP Business Technology Platform in a Cloud Foundry environment.
+  </p>
+</section>
+
+<section class="section" [id]="sections.Projects">
+  <h2>{{ my.projects.title }}</h2>
+  <div class="row row-cols-1 g-4">
+    <mat-card class="col-12" *ngFor="let item of my.projects.items; index as i">
+      <app-carousel [index]="i" [slidesFolder]="getSlidesFolder(item.title)"></app-carousel>
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{ item.title | titlecase }}</mat-card-title>
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        <app-pills-list [items]="item.skills"></app-pills-list>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <a *ngIf="item.presentationLink" mat-raised-button [href]="item.presentationLink" target="_blank">
+          <mat-icon>open_in_new</mat-icon>
+          Presentation
+        </a>
+        <a mat-raised-button [href]="item.gitHubLink" target="_blank" class="mx-2">
+          <mat-icon [svgIcon]="iconsName.GitHub"></mat-icon>
+          Source Code
+        </a>
+        <a mat-raised-button [href]="item.deployLink" target="_blank" color="primary">
+          <mat-icon>open_in_new</mat-icon>
+          Live Demo
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+</section>
+
+<section class="section" [id]="sections.Contacts">
+    <mat-accordion multi>
+      <mat-expansion-panel *ngFor="let item of contacts">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon [svgIcon]="item.icon.name"></mat-icon>
+          </mat-panel-title>
+          <mat-panel-description>
+            {{ item.title | titlecase }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>{{ item.data }}</p>
+        <button
+          mat-icon-button
+          matTooltip="Copy to clipboard"
+          [cdkCopyToClipboard]="item.data">
+          <mat-icon>content_copy</mat-icon>
+        </button>
+        <a mat-raised-button [href]="item.data" target="_blank">Link</a>
+      </mat-expansion-panel>
+    </mat-accordion>
+</section>

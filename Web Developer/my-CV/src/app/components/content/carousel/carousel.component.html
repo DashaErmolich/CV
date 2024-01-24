@@ -1,0 +1,24 @@
+<div [id]="carouselId" class="carousel slide carousel-dark" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button *ngFor="let id of buttonIds; index as i"
+      type="button"
+      [attr.data-bs-target]="carouselIndicatorsId"
+      [attr.data-bs-slide-to]="id"
+      [attr.aria-current]="i === 0"
+      [attr.aria-label]="'Slide ' + id"
+      [ngClass]="{'active': i === 0}"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item" *ngFor="let id of buttonIds; index as i" [ngClass]="{'active': i === 0}">
+      <img src="assets/img/{{slidesFolder}}/{{i + 1}}.png" class="d-block w-100 my-slider-image" alt="Slide">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" [attr.data-bs-target]="carouselIndicatorsId" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" [attr.data-bs-target]="carouselIndicatorsId" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

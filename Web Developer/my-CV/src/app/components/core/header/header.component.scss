@@ -1,0 +1,9 @@
+@use '../../../../styles/abstracts/variables';
+
+.header {
+  padding-top: variables.$portfolio-header-height;
+}
+
+.my-link:hover {
+  cursor: pointer;
+}

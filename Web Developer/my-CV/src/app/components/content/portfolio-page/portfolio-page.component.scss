@@ -1,0 +1,23 @@
+@use '../../../../styles/abstracts/variables';
+@use '../../../../styles/utils/mixins';
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-wrapper__centered {
+  height: 50%;
+}
+
+
+
+.avatar__colored-border {
+	place-self: center;
+	width: Min(20em, 90vw);
+	//@include mixins.border-ring(#f03355 #514b82 #ffa516 #25b09b, 1.25em, .75em)
+  @include mixins.border-ring(#ee31b1 #6e31ee #eecd31 #31b1ee, 0.5em, .75em)
+}
+

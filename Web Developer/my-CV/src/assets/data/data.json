@@ -10,7 +10,9 @@
     "tel": "+48 571 081 498",
     "linkedInLink": "https://www.linkedin.com/in/dasha-ermolich-b4b646192/",
     "gitHubLink": "https://github.com/DashaErmolich/",
-    "portfolioLink": ""
+    "portfolioLink": "",
+    "discordLink": "https://discordapp.com/users/976033660014841906",
+    "telegramLink": "https://t.me/DashaErmolich"
   },
   "subtitle": "Web Developer",
   "about": "Well-organized, highly motivated junior front-end developer with excellent ability to fast learning and team working. Recently successfully finished JavaScript/Front-end and Angular courses at the Rolling Scopes School and extremely interested in continuing learning and improving my technical skills. Have extensive experience in implementing responsive web applications with vanilla JS, HTML, and CSS during the learning path, and now can do this as SPA with Angular framework as well, especially applying Angular Material, Angular routing, reactive forms, animations, etc. Also have a useful practice of using different libraries such as RxJs, NgRx, Bootstrap, etc. Self-motivated, resourceful, and without fear of taking responsibility team member. Used to be a team lead during school group tasks with a responsibility to set up the project with CI/CD pipelines from scratch and held meetups.",
@@ -280,6 +282,7 @@
         ],
         "deployLink": "https://a39e098ctrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=18693773-ca8e-4995-bcb8-025e19224ea5#laborder-manage?sap-ui-app-id-hint=saas_approuter_orders",
         "gitHubLink": "https://github.com/DashaErmolich/LabSupplies",
+        "presentationLink": "https://dashaermolich.github.io/LabSupplies-Presentation/",
         "skills": [
           "SAP CAP",
           "SAP Fiori",

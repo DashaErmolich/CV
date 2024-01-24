@@ -12,6 +12,8 @@ export interface Data {
     linkedInLink: string,
     gitHubLink: string,
     portfolioLink: string,
+    discordLink: string,
+    telegramLink: string,
   },
   about: string,
   workExperience: {
@@ -46,10 +48,6 @@ export interface ExperienceBase {
   title: string,
   companyName: string,
   companyLink: string,
-}
-
-type Test = {
-  details: string[],
 }
 
 export interface ExperienceBase {
@@ -93,5 +91,6 @@ export interface Project {
   details: string[],
   deployLink: string,
   gitHubLink: string,
+  presentationLink?: string,
   skills: string[],
 }

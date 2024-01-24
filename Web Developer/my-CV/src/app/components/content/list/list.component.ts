@@ -1,14 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Education, Language, Project, Skills } from '../../../models/data.model';
-import { MatDividerModule } from '@angular/material/divider';
-import {MatCardModule} from '@angular/material/card';
-import {MatListModule} from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [CommonModule, MatDividerModule, MatCardModule, MatListModule],
+  imports: [CommonModule, MatCardModule],
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'
 })
