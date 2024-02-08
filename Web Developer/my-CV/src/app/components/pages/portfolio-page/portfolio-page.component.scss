@@ -21,3 +21,7 @@
   @include mixins.border-ring(#ee31b1 #6e31ee #eecd31 #31b1ee, 0.5em, .75em)
 }
 
+
+.test {
+  border-radius: 50%;
+}

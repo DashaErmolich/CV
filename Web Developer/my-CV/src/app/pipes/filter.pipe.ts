@@ -10,7 +10,6 @@ export class FilterPipe implements PipeTransform {
     if (!items) {
       return items;
     }
-    console.log(filterCondition)
 
     return items.filter((item) => item[key] === filterCondition);
   }

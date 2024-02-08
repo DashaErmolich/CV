@@ -8,24 +8,25 @@ import { MatIconModule } from '@angular/material/icon';
 import { IconsService } from '../../../services/icons.service';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
-import { CarouselComponent } from '../carousel/carousel.component';
-import { ListComponent } from '../list/list.component';
-import { PillsListComponent } from '../pills-list/pills-list.component';
-import {MatRippleModule} from '@angular/material/core';
+import { CarouselComponent } from '../../content/carousel/carousel.component';
+import { PillsListComponent } from '../../content/pills-list/pills-list.component';
+import { MatRippleModule } from '@angular/material/core';
 import { FilterPipe } from '../../../pipes/filter.pipe';
-import { IconGroupsEnum, IconsEnum } from '../../../enums/icons.enum';
-import { routes } from '../../../app.routes';
-import { SectionsEnum } from '../../../enums/page-sections.enum';
+import { IconGroupEnum, IconEnum } from '../../../enums/icons.enum';
+import { SectionEnum } from '../../../enums/page-sections.enum';
 import { HeaderComponent } from '../../core/header/header.component';
 import { Icon } from '../../../models/icon.model';
-import { IconButtonsComponent } from '../icon-buttons/icon-buttons.component';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {ClipboardModule} from '@angular/cdk/clipboard';
+import { IconButtonsComponent } from '../../content/icon-buttons/icon-buttons.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { QrCodeModule } from 'ng-qrcode';
+import { UtilsService } from '../../../services/utils.service';
+import { MaterialModule } from '../../../modules/material/material.module';
 
 interface Contact {
-  title: string | null,
-  data: string | null,
-  icon: Icon | null,
+  title: string,
+  data: string,
+  icon: Icon,
 }
 
 
@@ -36,12 +37,9 @@ interface Contact {
     CommonModule,
     RouterModule,
 
-    MatButtonModule,
-    MatIconModule,
-    MatTooltipModule,
-    MatCardModule,
-    MatRippleModule,
-    MatExpansionModule,
+    MaterialModule,
+
+    QrCodeModule,
 
     CarouselComponent,
     PillsListComponent,
@@ -57,56 +55,51 @@ interface Contact {
 export class PortfolioPageComponent implements OnInit {
   my!: Data;
 
-  sections = SectionsEnum;
+  sections = SectionEnum;
 
   icons!: Icon[];
 
-  iconsGroup = IconGroupsEnum;
+  iconsGroup = IconGroupEnum;
 
-  iconsName = IconsEnum;
+  iconsName = IconEnum;
 
-  panelOpenState = false;
-
-  contacts!: any;
+  contacts!: Contact[];
 
   constructor(
     private dataService: DataService,
     private iconsService: IconsService,
+    private utilsService: UtilsService,
   ) {
   }
 
   ngOnInit(): void {
     this.my = this.dataService.data;
     this.icons = this.iconsService.icons;
-
     this.contacts = this.mapContactsData({...this.my.contacts});
 
     this.icons.forEach((item) => {
-      this.iconsService.getIcon(item.name, item.svgName);
+      this.iconsService.getIcon(item.name, item.name);
     });
   }
 
   public getSlidesFolder(title: string): string {
-    return title.toLocaleLowerCase().split(' ').join('-');
+    return this.utilsService.getSlidesFolder(title);
   }
 
   private mapContactsData(data: Data['contacts']): Contact[] {
     const arr = Object.entries(data);
-    console.log(arr.map((item) => {
-      const itemTitle = item[0].split('Link').join('');
-      return {
-        title: itemTitle || null,
-        data: item[1] || null,
-        icon: this.icons.find((icon) => icon.name === itemTitle) || null,
-      }
-    }))
     return arr.map((item) => {
       const itemTitle = item[0].split('Link').join('');
       return {
-        title: itemTitle || null,
-        data: item[1] || null,
-        icon: this.icons.find((icon) => icon.name === itemTitle) || null,
+        title: itemTitle || '',
+        data: item[1] || '',
+        icon: this.icons.find((icon) => icon.name === itemTitle) || this.iconsService.defaultIcon,
       }
     });
+  }
+
+  getIconPath(iconName: IconEnum, isQr: boolean = false): string {
+    debugger
+    return this.utilsService.getIconPath(iconName, isQr);
   }
 }

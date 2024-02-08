@@ -1,8 +1,7 @@
-import { IconGroupsEnum, IconsEnum } from "../enums/icons.enum";
+import { IconGroupEnum, IconEnum } from "../enums/icons.enum";
 
 export interface Icon {
-  name: IconsEnum,
-  svgName: string,
+  name: IconEnum,
   tooltip: string,
-  group: IconGroupsEnum,
+  group: IconGroupEnum,
 }

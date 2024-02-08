@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Data } from '../../../models/data.model';
 import { DataService } from '../../../services/data.service';
 import { CommonModule } from '@angular/common';
-import { ListComponent } from '../list/list.component';
+import { ListComponent } from '../../content/list/list.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({

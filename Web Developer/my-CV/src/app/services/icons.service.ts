@@ -1,124 +1,116 @@
 import { Injectable } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-import { IconGroupsEnum, IconsEnum } from '../enums/icons.enum';
+import { IconGroupEnum, IconEnum } from '../enums/icons.enum';
 import { Icon } from '../models/icon.model';
+import { UtilsService } from './utils.service';
 
 
 const ICONS: Icon[] = [
   {
-    name: IconsEnum.GitHub,
-    svgName: 'github-icon-1-logo-svgrepo-com',
+    name: IconEnum.GitHub,
     tooltip: 'GitHub',
-    group: IconGroupsEnum.Contacts,
+    group: IconGroupEnum.Contacts,
   },
   {
-    name: IconsEnum.LinkedIn,
-    svgName: 'linkedin-icon-2-logo-svgrepo-com',
+    name: IconEnum.LinkedIn,
     tooltip: 'LinkedIn',
-    group: IconGroupsEnum.Contacts,
+    group: IconGroupEnum.Contacts,
   },
   {
-    name: IconsEnum.HTML,
-    svgName: 'HTML5_Badge',
+    name: IconEnum.HTML,
     tooltip: 'HTML',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.CSS,
-    svgName: 'CSS3_logo',
+    name: IconEnum.CSS,
     tooltip: 'CSS',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.JS,
-    svgName: 'javascript-logo-svgrepo-com',
+    name: IconEnum.JS,
     tooltip: 'JavaScript',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.CAP,
-    svgName: 'cap',
+    name: IconEnum.CAP,
     tooltip: 'SAP CAP',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.Angular,
-    svgName: 'angular-icon-logo-svgrepo-com',
+    name: IconEnum.Angular,
     tooltip: 'Angular',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.Sass,
-    svgName: 'Sass_Logo_Color',
+    name: IconEnum.Sass,
     tooltip: 'Sass',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.Typescript,
-    svgName: 'typescript',
+    name: IconEnum.Typescript,
     tooltip: 'Typescript',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.SAPUI5,
-    svgName: 'B',
+    name: IconEnum.SAPUI5,
     tooltip: 'SAPUI5',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.Discord,
-    svgName: 'discord-v2-svgrepo-com',
+    name: IconEnum.Discord,
     tooltip: 'Discord',
-    group: IconGroupsEnum.Contacts,
+    group: IconGroupEnum.Contacts,
   },
   {
-    name: IconsEnum.Telegram,
-    svgName: 'telegram-svgrepo-com',
+    name: IconEnum.Telegram,
     tooltip: 'Telegram',
-    group: IconGroupsEnum.Contacts,
+    group: IconGroupEnum.Contacts,
   },
   {
-    name: IconsEnum.NodeJs,
-    svgName: 'nodejs-icon-logo-svgrepo-com',
+    name: IconEnum.NodeJs,
     tooltip: 'Node.js',
-    group: IconGroupsEnum.TechStack,
+    group: IconGroupEnum.TechStack,
   },
   {
-    name: IconsEnum.Tel,
-    svgName: 'phone',
+    name: IconEnum.Tel,
     tooltip: 'Telephone',
-    group: IconGroupsEnum.Contacts,
+    group: IconGroupEnum.Contacts,
   },
   {
-    name: IconsEnum.Email,
-    svgName: 'mail',
+    name: IconEnum.Email,
     tooltip: 'Email',
-    group: IconGroupsEnum.Contacts,
+    group: IconGroupEnum.Contacts,
   },
   {
-    name: IconsEnum.Portfolio,
-    svgName: 'link',
+    name: IconEnum.Portfolio,
     tooltip: 'Portfolio',
-    group: IconGroupsEnum.Contacts,
-  },
+    group: IconGroupEnum.Contacts,
+  }
 ]
 
 @Injectable({
   providedIn: 'root'
 })
 export class IconsService {
-  public icons = ICONS;
+  public icons: Icon[] = ICONS;
+
+  public defaultIcon: Icon = {
+    name: IconEnum.Default,
+    tooltip: 'Default',
+    group: IconGroupEnum.Contacts,
+  }
 
   constructor(
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,
+    private utilsService: UtilsService,
   ) { }
 
   getIcon(iconName: string, svgName: string) {
     return this.matIconRegistry.addSvgIcon(
       iconName,
-      this.domSanitizer.bypassSecurityTrustResourceUrl(`../../assets/icons/${svgName}.svg`)
+      this.domSanitizer.bypassSecurityTrustResourceUrl(this.utilsService.getIconPath(svgName)),
     );
   }
 }

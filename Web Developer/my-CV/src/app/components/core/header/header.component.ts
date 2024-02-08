@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionsEnum } from '../../../enums/page-sections.enum';
+import { SectionEnum } from '../../../enums/page-sections.enum';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { DataService } from '../../../services/data.service';
 import { Data } from '../../../models/data.model';
@@ -18,7 +18,7 @@ import { RouterModule } from '@angular/router';
 export class HeaderComponent  implements OnInit{
   my!: Data;
 
-  sections = SectionsEnum;
+  sections = SectionEnum;
 
   constructor(
     private dataService: DataService,
@@ -29,7 +29,7 @@ export class HeaderComponent  implements OnInit{
     this.my = this.dataService.data;
   }
 
-  public scrollTo(targetId: SectionsEnum): void {
+  public scrollTo(targetId: SectionEnum): void {
     const HEADER_HEIGHT = 55;
     this.viewportScroller.setOffset([0, HEADER_HEIGHT]);
     this.viewportScroller.scrollToAnchor(targetId);

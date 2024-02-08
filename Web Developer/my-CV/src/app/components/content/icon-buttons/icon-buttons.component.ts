@@ -5,10 +5,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { IconsService } from '../../../services/icons.service';
-import { IconGroupsEnum, IconsEnum } from '../../../enums/icons.enum';
+import { IconGroupEnum, IconEnum } from '../../../enums/icons.enum';
 import { Router, RouterModule } from '@angular/router';
 import { DataService } from '../../../services/data.service';
 import { Data } from '../../../models/data.model';
+import { UtilsService } from '../../../services/utils.service';
 
 @Component({
   selector: 'app-icon-buttons',
@@ -32,6 +33,7 @@ export class IconButtonsComponent implements OnInit {
   constructor(
     private iconsService: IconsService,
     private dataService: DataService,
+    private utilsService: UtilsService,
   ) {
   }
 
@@ -39,13 +41,13 @@ export class IconButtonsComponent implements OnInit {
     this.contacts = this.dataService.data.contacts;
 
     this.icons.forEach((item) => {
-      this.iconsService.getIcon(item.name, item.svgName);
+      this.iconsService.getIcon(item.name, item.name);
     });
   }
 
   onClick(icon: Icon): void {
-    if (icon.group === IconGroupsEnum.Contacts) {
-      const key = `${icon.name}Link`;
+    if (icon.group === IconGroupEnum.Contacts) {
+      const key = this.utilsService.getContactsKey(icon.name);
       const href = this.contacts[key as keyof typeof this.contacts];
 
       if (href) {

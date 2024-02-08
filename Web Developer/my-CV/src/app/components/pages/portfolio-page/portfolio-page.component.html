@@ -85,9 +85,10 @@
         <mat-expansion-panel-header>
           <mat-panel-title>
             <mat-icon [svgIcon]="item.icon.name"></mat-icon>
+            {{ item.title | titlecase }}
           </mat-panel-title>
           <mat-panel-description>
-            {{ item.title | titlecase }}
+            <!-- {{ item.title | titlecase }} -->
           </mat-panel-description>
         </mat-expansion-panel-header>
         <p>{{ item.data }}</p>
@@ -97,7 +98,16 @@
           [cdkCopyToClipboard]="item.data">
           <mat-icon>content_copy</mat-icon>
         </button>
-        <a mat-raised-button [href]="item.data" target="_blank">Link</a>
+
+        <qr-code
+          [value]="item.data"
+          size="200"
+          errorCorrectionLevel="M"
+          darkColor="#071b24"
+          [centerImageSrc]="getIconPath(item.icon.name, true)">
+        </qr-code>
+
+        <a mat-button [href]="item.data" target="_blank">Link</a>
       </mat-expansion-panel>
     </mat-accordion>
 </section>
